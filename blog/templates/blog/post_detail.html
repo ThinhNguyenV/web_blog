@@ -1,24 +1,61 @@
-<h1>{{ post.title }}</h1>
-<p>{{ post.content }}</p>
-<p>Author: {{ post.author.username }}</p>
-<p>Created at: {{ post.created_at }}</p>
-<p>Updated at: {{ post.updated_at }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+</head>
+<body>
 
-{% if user.is_authenticated %}
-  <h3>Add a comment</h3>
-  <form method="post" action="{% url 'add_comment_to_post' pk=post.pk %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Add comment</button>
-  </form>
-{% else %}
-  <p>Please <a href="{% url 'login' %}">login</a> to add comments.</p>
-{% endif %}
+  <header style="text-align: center; padding: 20px; background-color: #333; color: #fff;">
+    <h1>{{ post.title }}</h1>
+  </header>
 
-<h3>Comments</h3>
-{% for comment in comments %}
-  <p>{{ comment.text }}</p>
-  <p>Author: {{ comment.author.username }}</p>
-  <p>Created at: {{ comment.created_at }}</p>
-  <hr>
-{% endfor %}
+  <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+
+    <article style="border: 1px solid #ccc; margin-bottom: 20px; padding: 10px;">
+
+      <p style="color: #666;">Author: {{ post.author.username }}</p>
+      <p style="color: #666;">Created at: {{ post.created_at }}</p>
+      <p style="color: #666;">Updated at: {{ post.updated_at }}</p>
+
+      <h2 style="color: #333;">Post Content</h2>
+      <p>{{ post.content }}</p>
+
+      {% if user.is_authenticated %}
+        <section style="margin-top: 20px;">
+          <h2 style="color: #333;">Add a Comment</h2>
+          <form method="post" action="{% url 'add_comment_to_post' pk=post.pk %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" style="background-color: #007bff; color: #fff; padding: 10px 15px; border: none; border-radius: 3px; cursor: pointer;">Add comment</button>
+          </form>
+        </section>
+      {% else %}
+        <section style="margin-top: 20px;">
+          <p style="color: #888;">Please <a href="{% url 'login' %}" style="color: #007bff; text-decoration: none;">login</a> to add comments.</p>
+        </section>
+      {% endif %}
+
+
+      <section style="margin-top: 20px;">
+        <h2 style="color: #333;">Comments</h2>
+        {% for comment in comments %}
+          <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #ccc;">
+            <p>{{ comment.text }}</p>
+            <p style="color: #666;">Author: {{ comment.author.username }}</p>
+            <p style="color: #666;">Created at: {{ comment.created_at }}</p>
+          </div>
+          <hr style="border: 1px solid #ccc; margin-top: 10px;">
+        {% endfor %}
+      </section>
+
+    </article>
+  </main>
+
+  <footer style="text-align: center; padding: 20px; background-color: #333; color: #fff;">
+    <!-- Add any footer content if needed -->
+  </footer>
+
+</body>
+</html>
