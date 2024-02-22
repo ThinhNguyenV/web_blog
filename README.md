@@ -1,5 +1,5 @@
-**Dự Án: blog_personal**
-- **Mô Tả Ngắn:** Xây dựng một trang web blog cá nhân với chức năng đăng bài, chỉnh sửa bài, xóa bài và thảo luận qua các bình luận.
-- **Vai Trò và Trách Nhiệm:** Phát triển toàn bộ hệ thống từ frontend đến backend, quản lý cả phần đăng nhập và quản lý người dùng.
-- **Công Nghệ và Công Cụ:** Python, Django, HTML, CSS, JavaScript, Bootstrap.
+**DProject: blog_personal**
+- **Describe:** Xây dựng một trang web blog cá nhân với chức năng đăng bài, chỉnh sửa bài, xóa bài và thảo luận qua các bình luận.
+- **Role:** Phát triển toàn bộ hệ thống từ frontend đến backend, quản lý cả phần đăng nhập và quản lý người dùng.
+- **Tech & Tools:** Python, Django, HTML, CSS, JavaScript, Bootstrap.
 
