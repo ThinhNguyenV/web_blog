@@ -39,8 +39,11 @@ This project was done by me as a assignment for an internship.
 
 <h2>Usage :</h2>
 
+    pip install django-crispy-forms==1.11.2
+    
     python manage.py makemigrations
 
     python manage.py migrate
 
     python manage.py runserver
+    
