@@ -9,7 +9,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post
+from .models import Post, Comment
 import operator
 from django.urls import reverse_lazy
 from django.contrib.staticfiles.views import serve
@@ -61,6 +61,11 @@ class UserPostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['comments'] = Comment.objects.filter(post=self.object)
+        return context
 
 
 class PostCreateView(LoginRequiredMixin, CreateView):

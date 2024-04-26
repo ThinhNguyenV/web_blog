@@ -1,35 +1,41 @@
+/* Body */
 body {
-  background: #fafafa;
-  color: #333333;
+  background: #fafafa; /* Màu nền */
+  color: #333333; /* Màu chữ */
   margin-top: 0;
 }
 
+/* Tiêu đề */
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #444444; /* Màu chữ tiêu đề */
 }
 
+/* Danh sách */
 ul {
   margin: 0;
 }
 
+/* Phần nền thép */
 .bg-steel {
   background-color: #5f788a;
 }
 
+/* Header */
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #cbd5db; /* Màu chữ menu */
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #ffffff; /* Màu chữ menu khi di chuột qua */
 }
 
 .site-header .navbar-nav .nav-link.active {
-  font-weight: 500;
+  font-weight: 500; /* Độ đậm của chữ menu khi đang được chọn */
 }
 
+/* Phần nội dung */
 .content-section {
-  background: #ffffff;
+  background: #ffffff; /* Màu nền nội dung */
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -37,11 +43,11 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: #444444; /* Màu chữ tiêu đề bài viết */
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #428bca; /* Màu chữ tiêu đề bài viết khi di chuột qua */
   text-decoration: none;
 }
 
@@ -55,10 +61,11 @@ a.article-title:hover {
   margin-right: 16px;
 }
 
+/* Thông tin bài viết */
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
@@ -72,6 +79,7 @@ a.article-title:hover {
   vertical-align: middle;
 }
 
+/* Hình ảnh tài khoản */
 .account-img {
   height: 125px;
   width: 125px;
@@ -80,5 +88,5 @@ a.article-title:hover {
 }
 
 .account-heading {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Kích thước chữ tiêu đề tài khoản */
 }
