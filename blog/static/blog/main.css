@@ -1,26 +1,21 @@
-/* Body */
 body {
   background: #fafafa; 
   color: #333333;
   margin-top: 0;
 }
 
-/* Tiêu đề */
 h1, h2, h3, h4, h5, h6 {
   color: #444444; 
 }
 
-/* Danh sách */
 ul {
   margin: 0;
 }
 
-/* Phần nền thép */
 .bg-steel {
   background-color: #5f788a;
 }
 
-/* Header */
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
 }
@@ -60,7 +55,6 @@ a.article-title:hover {
   margin-right: 16px;
 }
 
-/* Thông tin bài viết */
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
