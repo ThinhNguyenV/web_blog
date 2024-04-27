@@ -22,20 +22,19 @@ ul {
 
 /* Header */
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db; /* Màu chữ menu */
+  color: #cbd5db;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff; /* Màu chữ menu khi di chuột qua */
+  color: #ffffff; 
 }
 
 .site-header .navbar-nav .nav-link.active {
-  font-weight: 500; /* Độ đậm của chữ menu khi đang được chọn */
+  font-weight: 500; 
 }
 
-/* Phần nội dung */
 .content-section {
-  background: #ffffff; /* Màu nền nội dung */
+  background: #ffffff; 
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -43,11 +42,11 @@ ul {
 }
 
 .article-title {
-  color: #444444; /* Màu chữ tiêu đề bài viết */
+  color: #444444; 
 }
 
 a.article-title:hover {
-  color: #428bca; /* Màu chữ tiêu đề bài viết khi di chuột qua */
+  color: #428bca; 
   text-decoration: none;
 }
 
@@ -79,14 +78,13 @@ a.article-title:hover {
   vertical-align: middle;
 }
 
-/* Hình ảnh tài khoản */
 .account-img {
   height: 125px;
-  width: 125px;
+  width: 125px;  
   margin-right: 20px;
   margin-bottom: 16px;
 }
 
 .account-heading {
-  font-size: 2.5rem; /* Kích thước chữ tiêu đề tài khoản */
+  font-size: 2.5rem; 
 }
